@@ -1,0 +1,97 @@
+/* Declare three string variables using single quotes, double quotes, and backticks. For example:
+'Single quoted string'
+"Double quoted string"
+`Template literal string`
+Print all three strings using console.log(). */
+
+/*
+Declare a variable language and assign it the value "JavaScript".
+Create a string using backticks to say: "I am learning JavaScript." by embedding the language variable into the string.
+Print the resulting string using console.log(). 
+*/
+
+/* Create a variable multiLine and assign it a multi-line string using backticks. Example:
+This is line one.
+This is line two.
+This is line three.
+Print the multiLine variable using console.log(). 
+*/
+
+/* Declare a variable text and assign it the value "Hello, World!".
+Use the .length property to find the length of the string and store it in a variable called textLength.
+Print a message like: "The length of the text is 13." */
+
+/* Declare a variable word and assign it the value "JavaScript".
+Use bracket notation to access:
+The first character of the string.
+The last character of the string.
+Print messages like:
+"The first character is J."
+"The last character is t." */
+
+/* Declare two variables: num1 and num2 with values 7 and 5.
+Create a string using backticks to say: "The sum of 7 and 5 is 12." by embedding the sum expression directly within the template literal.
+Print the resulting string. */
+
+/* Create a variable greeting and assign it the value "Hello, World!".
+Convert the string to:
+Uppercase using .toUpperCase().
+Lowercase using .toLowerCase().
+Print both results using console.log().
+Example output:
+"HELLO, WORLD!"
+"hello, world!" */
+
+/* Create a variable sentence and assign it the value "Learning JavaScript is fun!".
+Use .substring() to extract the word "JavaScript" from the sentence.
+Print the extracted word using console.log().
+Example output:
+"Extracted word: JavaScript" */
+
+/* Create a variable word and assign it the value "JavaScript".
+Use bracket notation ([]) to:
+Print the first character of the string.
+Print the last character of the string.
+Print both results using console.log().
+Example output:
+"First character: J"
+"Last character: t" */
+
+/* Create a variable messyString and assign it the value " Clean me up! ".
+Use .trim() to remove the extra spaces at the beginning and end of the string.
+Print the cleaned-up string using console.log().
+Example output:
+"Cleaned string: Clean me up!"
+ */
+
+/* Create a variable phrase and assign it the value "JavaScript is versatile and powerful."
+Use .includes() to check if the string contains the word "powerful".
+Print the result using console.log().
+Example output:
+"Does the phrase include 'powerful'? true"
+ */
+
+/* Create a variable text and assign it the value "I like apples.".
+Use .replace() to change "apples" to "bananas".
+Print the updated string using console.log().
+Example output:
+"I like bananas."
+ */
+
+/* Create a variable longText and assign it the value "The quick brown fox jumps over the lazy dog."
+Use .slice() to extract "quick brown fox".
+Print the sliced portion using console.log().
+Example output:
+"Sliced text: quick brown fox" */
+
+/* Create a variable description and assign it the value " JavaScript is Fun and powerful! ".
+Perform the following:
+Trim the extra spaces using .trim().
+Convert the string to lowercase.
+Check if it includes the word "fun".
+Replace "powerful" with "amazing".
+Print the final string and whether it includes "fun" using console.log().
+Example output:
+"Final description: javascript is fun and amazing!"
+"Does it include 'fun'? true"
+ */

@@ -1,0 +1,68 @@
+/* 
+Create two variables:
+numString1 with the value "42".
+numString2 with the value "3.14".
+Use parseInt() to convert numString1 into an integer.
+Use parseFloat() to convert numString2 into a floating-point number.
+Print the results using console.log() with messages:
+"The integer is 42."
+"The floating-point number is 3.14."
+*/
+
+/* Create a variable price and assign it the value 19.56789.
+Use .toFixed() to:
+Round the price to 2 decimal places.
+Round the price to no decimal places.
+Print both results using console.log() with messages:
+"Price with 2 decimals: 19.57"
+"Price with no decimals: 20"
+ */
+
+/* 
+
+Create two variables:
+num1 with the value "10".
+num2 with the value "notANumber".
+Convert num1 and num2 using parseFloat().
+Print the sum of num1 and num2 using console.log().
+(Note: If one value is NaN, the result will be NaN, which will be printed automatically.)
+Example output:
+NaN (if the addition involves invalid input).
+10 (if both inputs are valid numbers).
+
+*/
+
+/* Create a variable userInput and assign it the value "25.75 apples".
+Use parseFloat() to extract the numeric part from the input.
+Use .toFixed() to round the number to 1 decimal place.
+Print the result using console.log().
+(If userInput doesn't start with a number, the result will be NaN.)
+Example outputs:
+"25.8" (if the input starts with a valid number).
+"NaN" (if the input is invalid).
+
+ */
+
+/* 
+1. Create a variable num and assign it the value 5.67.
+2. Use the Math.round() method to round num to the nearest whole number.
+3. Use the Math.floor() method to round it down to the nearest whole number.
+4. Use the Math.ceil() method to round it up to the nearest whole number.
+5. Print the results using console.log() with messages like: "The rounded value is 6." 
+*/
+
+/* 
+1. Use the Math.random() method to generate a random number between 0 and 1.
+2. Multiply the result by 10 and use Math.floor() to round it down to the nearest whole number.
+3. Print the random number using console.log() with a message like: "Your random number is 4." 
+*/
+
+/* 
+1. Create three variables: a = 12, b = 7, and c = 20.
+2. Use the Math.max() method to find the largest number among a, b, and c.
+3. Use the Math.min() method to find the smallest number among them.
+4. Print the results using console.log() with messages like:
+"The largest number is 20."
+"The smallest number is 7." 
+
+*/
