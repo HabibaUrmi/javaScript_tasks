@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ATM Simulator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="login-screen" class="container">
+      <h1>Enter PIN</h1>
+      <input
+        type="password"
+        id="pinInput"
+        placeholder="Enter 4-digit PIN"
+        maxlength="4"
+      />
+      <button id="pinSubmit">Submit</button>
+      <p class="message"></p>
+    </div>
+
+    <div id="atm-screen" class="container" style="display: none">
+      <h1>ATM Simulator</h1>
+      <h2>Balance: <span id="balance">0.00</span> €</h2>
+
+      <div class="transaction">
+        <input
+          type="number"
+          class="depositInput"
+          placeholder="Enter deposit amount"
+        />
+        <button class="depositBtn">Deposit</button>
+      </div>
+
+      <div class="transaction">
+        <input
+          type="number"
+          class="withdrawInput"
+          placeholder="Enter withdraw amount"
+        />
+        <button class="withdrawBtn">Withdraw</button>
+      </div>
+
+      <p class="message"></p>
+      <button id="logoutBtn">Logout</button>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
