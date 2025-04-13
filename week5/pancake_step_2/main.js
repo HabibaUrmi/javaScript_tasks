@@ -53,34 +53,33 @@ function updateTotalPrice() {
 
 // Step 4: Display the Order Summary
 seeOrderButton.addEventListener("click", () => {
-  console.log("See Order button clicked");
-  const name = form.customerName.value.trim();
-  const pancake = form.type.selectedOptions[0].textContent;
+  const name = customerName.value.trim();
+  const pancake = typeSelect.selectedOptions[0].textContent;
 
-  const toppings = selectedToppings.map((t) =>
+  const toppingList = selectedToppings.map((t) =>
     t.parentElement.textContent.trim()
   );
+  const extraList = selectedExtras.map((e) =>
+    e.parentElement.textContent.trim()
+  );
 
-  const extras = selectedExtras.map((e) => e.parentElement.textContent.trim());
-
-  const delivery = form
-    .querySelector("input[name='delivery']:checked")
-    .parentElement.textContent.trim();
+  const deliveryOption = form.querySelector("input[name='delivery']:checked");
+  const delivery = deliveryOption
+    ? deliveryOption.parentElement.textContent.trim()
+    : "Not selected";
 
   const total = totalPriceDisplay.textContent;
 
-  summaryText.innerHTML = `
-    <strong>Name:</strong> ${name} <br>
-    <strong>Pancake:</strong> ${pancake}<br>
-    <strong>Toppings:</strong> ${
-      toppings.length ? toppings.join(", ") : "None"
-    } <br>
-    <strong>Extras:</strong> ${extras.length ? extras.join(", ") : "None"} <br>
-    <strong>Delivery:</strong> ${delivery}<br>
-    <strong>Total:</strong> ${total}
-  `;
+  summaryText.innerHTML = [
+    `Name: ${name}`,
+    `Pancake: ${pancake}`,
+    `Toppings: ${toppingList.length ? toppingList.join(", ") : "None"}`,
+    `Extras: ${extraList.length ? extraList.join(", ") : "None"}`,
+    `Delivery: ${delivery}`,
+    `Total: ${total}`,
+  ].join("<br>");
 
-  orderSummary.style.display = "block";
+  orderSummary.style.display = "inline";
 });
 
 updateTotalPrice();
